@@ -311,3 +311,7 @@ Final notes
 - The project favors clarity and simplicity, with a design that scales from tiny apps to large platforms.
 
 End of document.
+
+## Links
+
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/tachikoma)
